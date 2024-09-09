@@ -1,0 +1,123 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Plus+Jakarta+Sans:ital,wght@0,800;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:  hsl(217, 54%, 11%);
+}
+.container{
+    max-width: 350px;
+    margin: 0px auto;
+    box-shadow: 26x 6px -13px rgba(0, 0,0,1.75);
+    font-family: 'Outfit', sans-serif;
+}
+.wrapper{
+    margin: 2rem 1rem;
+    padding: 20px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    box-shadow: 2px 3px -13px rgba(0, 0,0,1.75);
+}
+.img-top{
+    overflow: hidden;
+    position:relative;
+    border-radius: 12px;
+     display: block;
+    
+}
+.img-top img{
+    width: 100%;
+    /* height: 350px; */
+} 
+.imgoverlay img{
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+}
+.imgoverlay{
+    position: absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background-color:hsla(178, 100%, 50%,0.5);
+    display: none;
+}
+.img-top:hover .imgoverlay{
+    display: block;
+
+}
+.box-text a{
+ color: white;
+ text-decoration: none;
+ font-size: 20px;
+ display: inline-block;
+margin-top: 10px;
+margin-bottom: 10px;
+font-weight: 600;
+    
+}
+.box-text a:hover{
+    color: hsl(178, 100%, 50%);
+}
+p{
+    color: white;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.box-text p{
+    color:  hsl(215, 51%, 70%);
+}
+.ethr,.days{
+    display: flex;
+}
+.ethr p{
+    color: aqua;
+    padding-left: 4px;
+}
+.days p{
+    padding-left: 4px;
+    color:  hsl(215, 51%, 70%);
+}
+hr{
+   border-color:  hsl(215, 32%, 27%);
+}
+.author img{
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+    border: 2px solid white;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.author{
+    display: flex;
+    align-items: center; 
+    margin-top: 5px;
+
+}
+.author p{
+  
+    margin-top:2px;
+    padding-left:20px;
+    color:  hsl(215, 51%, 70%);
+}
+.author p a.jules{
+    font-size: 16px;
+    padding-left: 6px;
+    font-weight: 600;
+}
+.author p a.jules:hover{
+    color: aqua;
+}
